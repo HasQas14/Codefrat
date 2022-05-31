@@ -34,6 +34,11 @@
     "mongoose": "^5.10.8",
     "nodemon": "^2.0.4",
     "passport": "^0.4.1",
-    "passport-google-oauth20": "^2.0.0"
+    "passport-google-oauth20": "^2.0.0",
+    "react-bootstrap-carousel": "^4.1.1",
+    "react-elastic-carousel": "^0.11.5",
+    "react-slick": "^0.29.0",
+    "slick-carousel": "^1.8.1",
+    "styled-components": "^5.3.5"
   }
 }

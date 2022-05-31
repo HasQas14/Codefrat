@@ -13,7 +13,8 @@ import QuestionPage from "../components/QuestionPage/QuestionPage";
 import Form from "../components/AddQuestion/Form";
 import Codingpage from "../components/Codingpage//Codingpage";
 import Profile from "../components/UserProfile/profile";
-import Errorpage from '../components/Errorpage/Errorpage'
+import Errorpage from '../components/Errorpage/Errorpage';
+import Resources from '../components/resources/resources';
 export default class Routes extends Component {
   render() {
     return (
@@ -25,6 +26,7 @@ export default class Routes extends Component {
           <Route exact path="/add" component={Form} />
           <Route exact path="/codingpage/:id" component={Codingpage} />
           <Route exact path="/profile/:id" component={Profile} />
+          <Route exact path="/resources" component={Resources} />
           <Route path="*" component={Errorpage} />
         </Switch>
       </>

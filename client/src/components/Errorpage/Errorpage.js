@@ -5,8 +5,6 @@ import "./Errorpage.css";
 export default class Errorpage extends Component {
 
   render() {
-
-
     return (
       <>
       <section className="page_404">

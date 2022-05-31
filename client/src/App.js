@@ -1,7 +1,9 @@
 import React, { Component} from "react";
 import Navbar from "./components/Navbar/Navbar";
+import Carousal from "./components/carousal/carousal.js";
 import Routes from "./routes/routes";
 import "./App.css";
+
 
 export default class App extends Component {
   constructor(props) {
@@ -43,9 +45,8 @@ export default class App extends Component {
   }
   _handleNotAuthenticated = () => {
     this.setState({ authenticated: false });
-  };
+  }
   render() {
-
     const { authenticated } = this.state;
     const { user } = this.state;
     return (
@@ -58,6 +59,7 @@ export default class App extends Component {
           />
           <div className="container">
             <Routes />
+            <Carousal />
           </div>
         </div>
       </>
