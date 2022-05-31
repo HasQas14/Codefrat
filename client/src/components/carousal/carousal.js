@@ -18,7 +18,7 @@ export default class Carousal extends Component {
         <h2>People Working On this Project</h2>
         <Slider {...settings}>
           <div>
-          <h4 text-align="center">Qaseem Hasan<br /><span>4th Year BBDNITM</span></h4>
+          <h4>Qaseem Hasan<br /><span>4th Year BBDNITM</span></h4>
           </div>
           <div>
           <h4>Saurav Pratap Singh<br /><span>4th Year BBDNITM</span></h4>

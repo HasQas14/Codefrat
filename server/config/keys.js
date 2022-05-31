@@ -13,6 +13,10 @@ const SESSION = {
   COOKIE_KEY: "thisappisawesome",
 };
 
+// const JUDGE0 = {
+//   REACT_APP_JUDGE0_KEY:"51d76bc50dmshe26f4d8b1e56bddp1dfe02jsn6ca3317ae516",
+// }
+
 const KEYS = {
   ...GOOGLE_TOKENS,
   ...MONGODB,

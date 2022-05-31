@@ -79,13 +79,12 @@ export default class Compiler extends Component {
           outputText.innerHTML += "Creating Submission ...<br />";
         }
         const response = await fetch(
-          "https://judge0-extra.p.rapidapi.com/submissions",
+          "https://judge0-extra-ce.p.rapidapi.com/submissions",
           {
             method: "POST",
             headers: {
-              "x-rapidapi-host": "judge0-extra.p.rapidapi.com",
-              "x-rapidapi-key":
-                "62b1b5f315msh8d88d96b1858063p1af457jsn93a9017310e7",
+              "x-rapidapi-host": "judge0-extra-ce.p.rapidapi.com",
+              "x-rapidapi-key":"51d76bc50dmshe26f4d8b1e56bddp1dfe02jsn6ca3317ae516",
               "content-type": "application/json",
               accept: "application/json",
             },
@@ -118,13 +117,13 @@ export default class Compiler extends Component {
             outputText.innerHTML = `Creating Submission ... <br />Submission Created ...<br />Checking Submission Status<br />status : ${jsonGetSolution.status.description}`;
           }
           if (jsonResponse.token) {
-            let url = `https://judge0-extra.p.rapidapi.com/submissions/${jsonResponse.token}?base64_encoded=true`;
+            let url = `https://judge0-extra-ce.p.rapidapi.com/submissions/${jsonResponse.token}?base64_encoded=true`;
 
             const getSolution = await fetch(url, {
               method: "GET",
               headers: {
-                "x-rapidapi-host": "judge0-extra.p.rapidapi.com",
-                "x-rapidapi-key": process.env.REACT_APP_JUDGE0_KEY,
+                "x-rapidapi-host": "judge0-extra-ce.p.rapidapi.com",
+                "x-rapidapi-key": "51d76bc50dmshe26f4d8b1e56bddp1dfe02jsn6ca3317ae516",
                 "content-type": "application/json",
               },
             });
@@ -189,12 +188,12 @@ export default class Compiler extends Component {
       outputText.innerHTML = "";
       outputText.innerHTML += "Creating Submission ...\n";
       const response = await fetch(
-        "https://judge0-extra.p.rapidapi.com/submissions",
+        "https://judge0-extra-ce.p.rapidapi.com/submissions",
         {
           method: "POST",
           headers: {
-            "x-rapidapi-host": "judge0-extra.p.rapidapi.com",
-            "x-rapidapi-key": process.env.REACT_APP_JUDGE0_KEY,
+            "x-rapidapi-host": "judge0-extra-ce.p.rapidapi.com",
+            "x-rapidapi-key": "51d76bc50dmshe26f4d8b1e56bddp1dfe02jsn6ca3317ae516",
             "content-type": "application/json",
             accept: "application/json",
           },
@@ -221,14 +220,13 @@ export default class Compiler extends Component {
       ) {
         outputText.innerHTML = `Creating Submission ... \nSubmission Created ...\nChecking Submission Status\nstatus : ${jsonGetSolution.status.description}`;
         if (jsonResponse.token) {
-          let url = `https://judge0-extra.p.rapidapi.com/submissions/${jsonResponse.token}?base64_encoded=true`;
+          let url = `https://judge0-extra-ce.p.rapidapi.com/submissions/${jsonResponse.token}?base64_encoded=true`;
 
           const getSolution = await fetch(url, {
             method: "GET",
             headers: {
-              "x-rapidapi-host": "judge0-extra.p.rapidapi.com",
-              "x-rapidapi-key": process.env.REACT_APP_JUDGE0_KEY,
-              "content-type": "application/json",
+              "x-rapidapi-host": "judge0-extra-ce.p.rapidapi.com",
+              "x-rapidapi-key": "51d76bc50dmshe26f4d8b1e56bddp1dfe02jsn6ca3317ae516",
             },
           });
 
